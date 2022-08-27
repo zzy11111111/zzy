@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import './public';
+main {
+    width: 1240px;
+    margin: 0 auto;
+    .title {
+        font-size: 24px;
+        text-align: center;
+        line-height: 100px;
+    }
+    .content {
+        .one {
+            font-weight: 700;
+            line-height: 40px;
+        }
+    }
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}

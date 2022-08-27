@@ -1,0 +1,58 @@
+{
+  "id": "3600818",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "629357",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "1546571",
+      "name": "二维码",
+      "font_class": "erweima",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    },
+    {
+      "icon_id": "1727458",
+      "name": "224用户-线性",
+      "font_class": "yonghu-xianxing",
+      "unicode": "e8c8",
+      "unicode_decimal": 59592
+    },
+    {
+      "icon_id": "7720091",
+      "name": "置顶",
+      "font_class": "zhiding",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "8655875",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "20402187",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    },
+    {
+      "icon_id": "7542686",
+      "name": "24gl-bag",
+      "font_class": "24gl-bag",
+      "unicode": "e877",
+      "unicode_decimal": 59511
+    }
+  ]
+}

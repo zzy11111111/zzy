@@ -1,0 +1,428 @@
+@import 'public';
+
+body {
+    font-family: SHSC, "微软雅黑", "黑体", "思源黑体", sans-serif;
+}
+
+#bancenter {
+    width: 1240px;
+    height: 12060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    // 左边部分
+    .boxleft {
+        width: 750px;
+        height: 1000px;
+
+        .box1 {
+            width: 750px;
+            height: 650px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .box1top {
+                width: 544px;
+                height: 544px;
+                background-color: #fafafa;
+                overflow: hidden;
+            }
+
+            .box1top>img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .box1but {
+                width: 544px;
+                overflow-x: hidden;
+                overflow-y: hidden;
+                margin-top: 24px;
+                -webkit-box-pack: center;
+                display: flex;
+                justify-content: center;
+            }
+
+            .box1but>li {
+                width: 80px;
+                height: 80px;
+                margin: 0 4px;
+                background-color: #fafafa;
+                cursor: pointer;
+            }
+
+            .box1but>li>img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        .box2 {
+            width: 100%;
+            margin-top: 50px;
+            overflow: hidden;
+
+            & img {
+                float: left;
+            }
+        }
+    }
+
+    ;
+    // 右边的部分
+    .boxright {
+        width: 408px;
+        height: 1000px;
+        // 右边部分的吸顶的那部分
+        .ribox1 {
+            width: 408px;
+            height: 433px;
+            padding-top: 28px;
+            margin-bottom: 30px;
+
+            .ri1 {
+                font-size: 14px;
+                color: #737373;
+                line-height: 24px;
+            }
+
+            .ri2 {
+                font-size: 14px;
+                color: #737373;
+                line-height: 24px;
+            }
+
+            .ri3 {
+                font-size: 24px;
+                color: #414141;
+                line-height: 48px;
+                font-weight: lighter;
+                ;
+            }
+            // 两个图片框
+            .ri4 {
+                position: relative;
+                width: 400px;
+                padding: 10px 0;
+                background-color: #fff;
+                .ri4ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                // 两个图片框
+                .ri4ul>li {
+                    border: solid 2px #414141;
+                    float: left;
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 8px;
+                    border-radius: 4px;
+                    box-sizing: unset;
+                    cursor: pointer;
+                    overflow: hidden;
+
+                    .ri4ulb1 {
+                        display: block;
+                        width: 100%;
+                        border-radius: 4px;
+                        height: 100%;
+                        box-sizing: border-box;
+                        text-decoration: none;
+                        color: inherit;
+                    }
+
+                    .ri4ulb1>img {
+                        width: 100px;
+                        height: 100px;
+                    }
+
+                    .ri4ulb2 {
+                        width: 100%;
+                        height: 85px;
+                        box-sizing: border-box;
+                        padding: 0 5px;
+                        text-align: center;
+                        font-size: 12px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .ri4ulb3 {
+                        color: #999;
+                        font-size: 12px;
+                        margin-bottom: 0.1rem;
+                    }
+                }
+               #ri4li2{
+                border: solid 2px #bab8b6;
+                float: left;
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-right: 8px;
+                border-radius: 4px;
+                box-sizing: unset;
+                cursor: pointer;
+                overflow: hidden;
+               }
+            }
+
+            .ri5 {
+                margin: 20px 0 0 0;
+                display: flex;
+
+                .ri5le {
+                    width: 160px;
+                    height: 48px;
+                    border-radius: 4px;
+                    background-color: #414141;
+                    border: 2px solid #414141;
+                    line-height: 44px;
+                    color: #f1f1f1;
+                    text-align: center;
+                    font-weight: lighter;
+                    font-size: 14px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    user-select: none;
+                    float: left;
+                    position: relative;
+                    padding: 0 10px;
+                    min-height: 24px;
+
+                    // 外部定位的二维码
+                    .wai {
+                        position: absolute;
+                        top: 47;
+                        left: -3;
+                        width: 220px;
+                        height: 248px;
+                        background-color: rgb(255, 255, 255);
+                        border-radius: 6px;
+                        padding: 5px;
+                        z-index: 99;
+                        border: 5px solid rgb(102, 102, 102);
+                        display: none;
+
+                        .pp {
+                            color: #000;
+
+                        }
+
+                        .pp1>img {
+                            width: 190px;
+                        }
+                    }
+
+                }
+
+                .ri5cen {
+                    border: solid 2px #bab8b6;
+                    background-color: #fff;
+                    color: #414141;
+                    margin-left: 8px;
+                    width: 160px;
+                    height: 45px;
+                    border-radius: 4px;
+                    text-align: center;
+                    line-height: 44px;
+                    font-weight: lighter;
+                    font-size: 14px;
+                    cursor: pointer;
+                    user-select: none;
+                    position: relative;
+                    padding: 0 10px;
+                    min-height: 24px;
+                }
+
+                .ri5ri {
+                    margin-left: 8px;
+                    width: 160px;
+                    height: 48px;
+                    border-radius: 4px;
+                    background-color: #414141;
+                    border: 2px solid #414141;
+                    line-height: 44px;
+                    color: #f1f1f1;
+                    text-align: center;
+                    font-weight: lighter;
+                    font-size: 14px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    user-select: none;
+                    float: left;
+                    position: relative;
+                    padding: 0 10px;
+                    min-height: 24px;
+
+
+                }
+            }
+        }
+
+        .ribox2 {
+            height: 62px;
+            border-top: 2px solid #f1f1f1;
+            min-height: 62px;
+            box-sizing: border-box;
+            color: grey;
+            font-size: 14px;
+            font-weight: lighter;
+            line-height: 60px;
+            position: relative;
+            clear: both;
+
+            .ri1 {
+                float: left;
+                color: grey;
+                font-size: 14px;
+                font-weight: lighter;
+                line-height: 60px;
+            }
+
+            .ri2 {
+                float: left;
+                color: grey;
+                font-size: 30px;
+                font-weight: lighter;
+                line-height: 60px;
+            }
+
+            .ri2>span {
+                float: left;
+                width: 32px;
+                height: 100%;
+                margin-left: 30px;
+                background-size: 32px;
+                cursor: pointer;
+                font-size: 30px;
+                text-decoration: none;
+            }
+        }
+
+        .ribox3 {
+            border-top: 2px solid #f1f1f1;
+            min-height: 62px;
+            box-sizing: border-box;
+            color: grey;
+            font-size: 14px;
+            font-weight: lighter;
+            line-height: 60px;
+            position: relative;
+            clear: both;
+
+            .ri3top {
+                color: grey;
+                font-size: 14px;
+                height: 60px;
+                font-weight: lighter;
+                line-height: 60px;
+                cursor: pointer;
+
+                .le {
+                    float: left;
+                }
+
+                .ri11 {
+                    float: right;
+                    margin-right: 30px;
+                }
+            }
+
+            .ri3ul {
+                display: none;
+                background-color: #f1f1f1;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                color: grey;
+                font-size: 14px;
+                font-weight: lighter;
+                line-height: 30px;
+
+                    & li{
+                        color: #000;
+                        & span{
+                            color: grey;
+                        }
+                    }
+            }
+        }
+
+        .ribox4 {
+            border-top: 2px solid #f1f1f1;
+            min-height: 62px;
+            box-sizing: border-box;
+            color: grey;
+            font-size: 14px;
+            font-weight: lighter;
+            line-height: 60px;
+            position: relative;
+            clear: both;
+
+            .ri4top {
+                height: 60px;
+            }
+
+            .le {
+                float: left;
+            }
+
+            .ri22 {
+                float: right;
+                margin-right: 30px;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .ri4but {
+                display: none;
+                background-color: #f1f1f1;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                line-height: 30px;
+            }
+        }
+
+        .ribox5 {
+            border-top: 2px solid #f1f1f1;
+            min-height: 62px;
+            height: 60px;
+            box-sizing: border-box;
+            color: grey;
+            font-size: 14px;
+            font-weight: lighter;
+            line-height: 60px;
+            position: relative;
+            clear: both;
+
+            .ri5top {
+                height: 60px;
+            }
+            .le {
+                float: left;
+            }
+
+            .ri33 {
+                float: right;
+                margin-right: 30px;
+                cursor: pointer;
+            }
+
+            .ri5but {
+                display: none;
+                background-color: #f1f1f1;
+                padding: 10px 20px;
+                box-sizing: border-box;
+                word-break: break-all;
+                line-height: 30px;
+            }
+        }
+    }
+
+}

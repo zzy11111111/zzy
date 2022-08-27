@@ -1,0 +1,26 @@
+[
+    {
+        "data-id": "1",
+        "data-series": "合作系列",
+        "data-size": "16cm",
+        "data-design": "圆形",
+        "data-color": "红色",
+        "a": "javascript:;",
+        "img-src": "../img/list-1.jpg",
+        "name": "ROSEONLY ❤ MINIONS联名款-圆形-红色",
+        "price": "￥520",
+        "p-src": "../img/list-hot.jpg"
+    },
+    {
+        "data-id": "2",
+        "data-series": "经典系列",
+        "data-size": " ",
+        "data-design": "花盒",
+        "data-color": "朱砂",
+        "a": "javascript:;",
+        "img-src": "../img/list-2.jpg",
+        "name": "朱砂-恒久花盒",
+        "price": "￥1999",
+        "p-src": "../img/list-hot.jpg"
+    }
+]

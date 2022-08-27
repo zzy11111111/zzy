@@ -1,0 +1,299 @@
+@import './public';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// 大盒子
+.myCart {
+    width: 1240px;
+    min-height: 712px;
+    // position: relative;
+    // top: 120px;
+    margin: 0 auto;
+    font-family: SHSC, "微软雅黑", "黑体", "思源黑体", sans-serif;
+
+
+    // 标题
+    .cartTitle {
+        width: 100%;
+        height: 36px;
+        text-align: center;
+        color: #414141;
+        line-height: 36px;
+        padding: 6px 0;
+        font-size: 24px;
+    }
+
+    // 导航栏
+    .nav {
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        background-color: #f1f1f1;
+        font-size: 14px;
+        font-family: SHSC, "微软雅黑", "黑体", "思源黑体", sans-serif;
+
+        .blank {
+            width: 88px;
+        }
+
+        .productInformation {
+            width: 537px;
+        }
+
+        .price {
+            width: 208px;
+        }
+
+        .num {
+            width: 208px;
+        }
+
+        .operate {
+            width: 48px;
+        }
+    }
+
+    // 购买商品盒子模板
+    .cartbox {
+        .buy {
+            width: 100%;
+            font-family: SHSC, "微软雅黑", "黑体", "思源黑体", sans-serif;
+            background-color: #fff;
+            // min-height: 850px;
+            color: #414141;
+            font-size: 16px;
+            list-style: none;
+            padding: 24px 0 16px 0;
+            clear: both;
+
+            li {
+                height: 145px;
+                // background-color: red;
+
+
+                .input {
+                    width: 88px;
+                    height: 145px;
+                    float: left;
+
+                    input {
+                        width: 16px;
+                        height: 16px;
+                        margin-top: 64px;
+                        margin-left: 36px;
+                    }
+                }
+
+
+                .img {
+                    width: 537px;
+                    float: left;
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        margin-left: 30px;
+                        float: left;
+                        margin-top: 25px;
+                        margin-right: 20px;
+                    }
+
+                    .productInformation {
+                        margin-top: 25px;
+                        float: left;
+
+                        .set {
+                            font-size: 14px;
+                            font-weight: lighter;
+                            color: grey;
+                            margin-top: 10px;
+                        }
+
+                        .name {
+                            color: #414141;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .price {
+                    float: left;
+                    margin-top: 45px;
+                    color: #414141;
+                    font-size: 16px;
+                    width: 208px;
+                }
+
+                .num {
+                    float: left;
+                    margin-top: 45px;
+                    width: 208px;
+
+                    .number {
+                        border: none;
+                        margin-top: 5px;
+                        outline: none;
+                    }
+
+                    .border {
+                        width: 90px;
+                        height: 24px;
+                        border: 1px solid black;
+                        border-radius: 50px;
+
+                        .minus {
+                            width: 16px;
+                            height: 16px;
+                            line-height: 16px;
+                            border: 1px solid rgb(187, 185, 183);
+                            border-radius: 50px;
+                            background-color: rgb(187, 185, 183);
+                            color: #f1f1f1;
+                            text-align: center;
+                            font-weight: bold;
+                            float: left;
+                            margin-top: 3px;
+                            margin-left: 2px;
+                            font-size: 16px;
+                        }
+
+                        .number {
+                            width: 46px;
+                            float: left;
+                            text-align: center;
+                        }
+
+                        .plus {
+                            width: 16px;
+                            height: 16px;
+                            line-height: 16px;
+                            border: 1px solid rgb(77, 77, 77);
+                            border-radius: 50px;
+                            background-color: rgb(77, 77, 77);
+                            color: #f1f1f1;
+                            text-align: center;
+                            font-weight: bold;
+                            float: right;
+                            margin-top: 3px;
+                            margin-right: 2px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .del {
+                    float: left;
+                    margin-top: 45px;
+                    width: 48px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+
+    }
+
+    // 合计
+    .add {
+        height: 48px;
+        color: #414141;
+        font-family: SHSC, "微软雅黑", "黑体", "思源黑体", sans-serif;
+        clear: both;
+        margin-top: 36px;
+
+        .all {
+            width: 88px;
+            float: left;
+            text-align: right;
+            height: 43px;
+            position: absolute;
+
+            input {
+                width: 16px;
+                height: 16px;
+                margin-top: 8px;
+                margin-right: 7px;
+            }
+
+            span {
+                font-size: 14px;
+                position: relative;
+                top: -2px;
+            }
+        }
+
+        .blank1 {
+            width: 835px;
+            float: left;
+            height: 48px;
+        }
+
+        .total {
+            width: 208px;
+            float: left;
+            height: 48px;
+            line-height: 48px;
+            font-size: 14px;
+            // border: 1px solid red;
+
+        }
+
+        .num {
+            width: 160px;
+            float: left;
+            height: 48px;
+            line-height: 48px;
+            background-color: #b42c25;
+
+            color: #f1f1f1;
+            text-align: center;
+            font-size: 18px;
+
+            .number {
+                background-color: red;
+            }
+        }
+    }
+
+    // 订单帮助
+    .olderHelp {
+        margin-top: 32px;
+        width: 1064px;
+        height: 88px;
+        padding: 16px 88px;
+        background-color: #f1f1f1;
+        color: #414141;
+        font-family: SHSC, "微软雅黑", "黑体", "思源黑体", sans-serif;
+
+        .olderHelpTitle {
+            font-size: 18px;
+            margin-bottom: 14px;
+        }
+
+        .telePhone {
+            font-size: 14px;
+        }
+
+        .online {
+            font-size: 14px;
+        }
+
+        .material {
+            font-size: 14px;
+        }
+    }
+
+}
+
+.myCart .nav .blank,
+.myCart .nav .productInformation,
+.myCart .nav .price,
+.myCart .nav .operate,
+.myCart .nav .num {
+    height: 48px;
+    float: left;
+    color: #414141;
+}

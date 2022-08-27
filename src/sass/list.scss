@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    /* 去除默认的下划线 */
+    color: #fff;
+    /* 去除默认的颜色和点击后变化的颜色 */
+}
+
+// 导入头部和底部的样式
+@import './public';
+
+
+// 导航条
+nav {
+    width: 100%;
+    height: 44.0025px;
+
+    .center {
+        height: 44.0025px;
+        width: 1239.9975px;
+        margin: 0 auto;
+        border-bottom: 3px solid #fafafa;
+        box-sizing: border-box;
+        // background-color: blue;
+
+        ul {
+            float: right;
+            box-sizing: border-box;
+
+            //设置li
+            li {
+                float: left;
+                line-height: 44.0025px;
+                font-size: 15px;
+                color: #a0a5a2;
+                margin-right: 20.0025px;
+                position: relative;
+
+                .arrowdown {
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    right: -12px;
+                    top: 21px;
+                    border-right: .9975px solid #999;
+                    border-bottom: .9975px solid #999;
+                    box-sizing: border-box;
+                    transform: rotate(45deg);
+                    display: none;
+                    border-color: #999;
+                }
+
+                .arrowup {
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    right: -12px;
+                    top: 17.0025px;
+                    border-right: .9975px solid #999;
+                    border-bottom: .9975px solid #999;
+                    box-sizing: border-box;
+                    transform: rotate(225deg);
+                    display: none;
+                    border-color: #999;
+                }
+            }
+        }
+    }
+}
+
+//添加划过的下划线
+nav .center ul li .underline {
+    width: 33.9975px;
+    height: 3.9975px;
+    position: absolute;
+    top: 38.0025px;
+    left: -0.9975px;
+    background-color: #464b5b;
+    display: none;
+}
+
+// 添加划过效果 鼠标变小手 颜色变色
+nav .center ul li:hover {
+    color: #464b5b;
+    cursor: pointer;
+}
+
+// 添加划过把下划线找出来
+nav .center ul li:hover .underline {
+    display: block;
+}
+
+
+// 内容区域
+#content {
+    width: 100%;
+    min-height: 879.9975px;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+    // 版心区域 最小高度 880 最大由内容撑开
+    .center {
+        width: 1239.9975px;
+        display: flex;
+        margin: 0 auto;
+
+        //左边选项栏
+        .left {
+            width: 194.0025px;
+
+
+            //设置左边的最外层ul
+            ul .big {
+                width: 170.0025px;
+                background-color: #fff;
+                line-height: 63.9975px;
+                color: #8b8585;
+                border-bottom: 3px solid #fbfbfb;
+                box-sizing: border-box;
+                margin-left: 12px;
+                cursor: pointer;
+
+                span {
+                    margin-left: 113.0025px;
+                    font-size: 24.9975px;
+                    color: #8d8d8d;
+                    font-weight: bold;
+                }
+
+                ul {
+                    position: relative;
+                }
+
+                ul li {
+                    height: 38.0025px;
+                    line-height: 38.0025px;
+                    margin-left: 30px;
+                    font-size: 15px;
+                    color: #8b8585;
+                    position: relative;
+                }
+
+                ul li:hover {
+                    color: #484848;
+                }
+
+                // 单选框
+                ul li .radio {
+                    position: absolute;
+                    top: 11.0025px;
+                    left: -23.0025px;
+                    width: 17.0025px;
+                    height: 15.9975px;
+                    border: .9975px solid grey;
+                    display: block;
+                    border-radius: 3.9975px;
+                    box-sizing: border-box;
+                    // 对号的字体颜色
+                    color: white;
+                    line-height: 14.0025px;
+                    font-size: 12px;
+                    padding-left: 3px;
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        // 右边的部分
+        .right {
+            width: 1046.0025px;
+
+            // 右边的每个商品的盒子
+            .box {
+                float: left;
+                margin: 17.0025px 0 0 11.0025px;
+                width: 249.9975px;
+                height: 368.0025px;
+                background-color: #fafafa;
+                text-align: center;
+                position: relative;
+
+                .p-1 {
+                    color: #acb2bc;
+                    font-size: 14.0025px;
+                    margin-bottom: 6.9975px;
+                }
+
+                .p-2 {
+                    margin-top: 5.0025px;
+                    width: 230.0025px;
+                    margin: 0 auto;
+                    color: #333;
+                }
+
+                .p-3 {
+                    margin-top: 20.0025px;
+                    color: #474345;
+                    font-size: 15.9975px;
+                }
+
+                // 添加商品框左上角hot 或者 new
+                .icon {
+                    position: absolute;
+                    left: 9.9975px;
+                    top: 9.9975px;
+
+                    img {
+                        width: 39.9975px;
+                    }
+                }
+            }
+
+            // 盒子划过 鼠标变小手 背景阴影设置
+            .box:hover {
+                box-shadow: 0 0 9.9975px 3px #ccc;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+
+// 回到顶部按钮
+#returntop {
+    width: 33px;
+    height: 33px;
+    background-color: #808080;
+    position: fixed;
+    bottom: 80.0025px;
+    right: 6.9975px;
+    border-radius: 3.9975px;
+    background-image: url(../img/icon-top.png);
+    background-size: 24.9975px;
+    background-position: 3.9975px 3.9975px;
+    background-repeat: no-repeat;
+    display: none;
+    overflow: hidden;
+
+    .top {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #414141;
+        border: .9975px solid grey;
+        box-sizing: border-box;
+        border-radius: 3.9975px;
+        color: #fff;
+        line-height: 32.0025px;
+        font-size: 12px;
+        text-align: center;
+        transform-origin: left bottom;
+        transform: rotate(-180deg);
+        transition: .3s;
+    }
+}
+
+#content .right a .box {
+    animation: myAnim 1s ease 0s 1 normal forwards;
+
+    @keyframes myAnim {
+        0% {
+            transform: scaleX(0.4);
+        }
+
+        100% {
+            transform: scaleX(1);
+        }
+    }
+
+    // display:  none;
+    img {
+        width: 249.9975px;
+        display: block;
+    }
+
+}
+
+// 移入变小手
+#returntop:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+// 底部
+footer {
+    margin-top: 39.9975px;
+}
